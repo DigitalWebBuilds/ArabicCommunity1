@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Arabic With Aya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        :root {
+            --bs-primary: #7F1146;
+            --bs-secondary: #C12872;
+        }
+
+        .bg-primary {
+            background-color: var(--bs-primary) !important;
+        }
+
+        .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--bs-secondary);
+            border-color: var(--bs-secondary);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(127, 17, 70, 0.7), rgba(127, 17, 70, 0.8)), url('public/background.jpg');
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Learn Arabic With Aya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-white text-center" id="home">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Learn Arabic With Aya</h1>
+            <p class="lead mb-4">Your way to learn Arabic</p>
+            <a href="#products" class="btn btn-light btn-lg px-5" style="color: rgb(127, 17, 70);">Explore Our
+                Materials</a>
+        </div>
+    </section>
+
+    <section class="py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Learning Materials</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="/public/digital_copy.png" class="card-img-top" alt="PDF Book">
+                        <div class="card-body">
+                            <h3 class="card-title">PDF Book</h3>
+                            <p class="card-text">Interactive digital learning material with exercises and cultural
+                                insights.</p>
+                            <a href="https://buy.stripe.com/00gdSX70U6ew8xy4gg" class="btn btn-primary mt-3">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="/public/hard_copy.jpg" class="card-img-top" alt="Hardcopy Book">
+                        <div class="card-body">
+                            <h3 class="card-title">Hardcopy Book</h3>
+                            <p class="card-text">Premium quality physical textbook with practice materials.</p>
+                            <a href="https://buy.stripe.com/14k027gBu1Yg012dQR" class="btn btn-primary mt-3">Buy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="features">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Us?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-4 border rounded shadow-sm h-100">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 64px; height: 64px;">
+                            <i class="bi bi-book fs-2"></i>
+                        </div>
+                        <h3>Interactive Lessons</h3>
+                        <p>Engaging and interactive lessons to keep you motivated</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4 border rounded shadow-sm h-100">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 64px; height: 64px;">
+                            <i class="bi bi-globe2 fs-2"></i>
+                        </div>
+                        <h3>Cultural Insights</h3>
+                        <p>Learn Arab culture while mastering the language</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-4 border rounded shadow-sm h-100">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 64px; height: 64px;">
+                            <i class="bi bi-people fs-2"></i>
+                        </div>
+                        <h3>Expert Support</h3>
+                        <p>Access to experienced Arabic instructors</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer class="bg-primary text-white py-5" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h3 class="mb-4">Contact Us</h3>
+                    <a href="mailto:ayahmosa65@gmail.com" class="text-white text-decoration-none">
+                        <i class="bi bi-envelope-fill me-2"></i>ayahmosa65@gmail.com
+                    </a>
+                    <p class="mt-3 mb-0">Connect with us for personalised learning support</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-4">Follow Us</h3>
+                    <div class="d-flex gap-3">
+                        <a href="https://www.instagram.com/arabiccommunity1/" class="text-white fs-4" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@ArabicCommunity/" class="text-white fs-4" target="_blank">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-white mt-4 pt-4 text-center">
+                <small>2024 Learn Arabic With Aya</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
